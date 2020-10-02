@@ -100,15 +100,15 @@
 
   .wrapper {
     width: 600px;
-    align-content: center;
-    display: flex;
     margin: auto;
     padding-top: 15px;
   }
 
   .contentbody {
-    align-self: center;
     display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-bottom: 15px;
   }
 
   .bodypic {
