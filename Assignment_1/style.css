@@ -67,17 +67,27 @@
   width: 960px;
   align-content: center;
   display: flex;
-  justify-content: center;
+  margin: auto;
 }
 
 .contentbody {
   width: 310px;
+  padding: 10px;
 }
 
 .workhistory {
   width: 630px;
+  background-color: #ffffff;
+  padding: 20px;
 }
 
 .bodypic {
-  height: 23%;
+  width: 300px;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+}
+
+.caption {
+  background-color: #ffffff;
+  padding: 5px;
 }
