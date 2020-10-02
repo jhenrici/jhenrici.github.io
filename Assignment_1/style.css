@@ -104,10 +104,10 @@
   }
 
   .contentbody {
-    justify-content: space-around;
+    align-self: flex-start;
   }
 
   .workhistory {
-    justify-content: flex-end;
+    align-self: flex-end;
   }
 }
