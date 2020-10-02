@@ -103,7 +103,6 @@
     display: flex;
     margin: auto;
     padding-top: 15px;
-    flex-flow: column wrap;
   }
 
   .contentbody {
