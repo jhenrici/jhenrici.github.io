@@ -108,6 +108,7 @@
 
   .contentbody {
     width: 600px;
+    align-self: flex-start;
   }
 
   .bodypic {
@@ -122,6 +123,7 @@
   }
 
   .workhistory {
+    width: 600px;
     align-self: flex-end;
   }
 }
