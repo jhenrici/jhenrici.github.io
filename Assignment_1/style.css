@@ -12,7 +12,6 @@
 
 .body {
   width: 100%;
-  min-width: 1000px;
   margin: 0;
   padding: 0;
   background-color: #FCC679;
@@ -90,4 +89,17 @@
 .caption {
   background-color: #ffffff;
   padding: 5px;
+}
+
+/* || breakpoints */
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    display: flex;
+    margin: auto;
+  }
+
+  .contentbody {
+    justify-content: space-between;
+  }
 }
