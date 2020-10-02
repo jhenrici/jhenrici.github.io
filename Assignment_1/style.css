@@ -1,25 +1,3 @@
-/* || breakpoints */
-
-@media (max-width: 1000px) {
-  .html {
-    background-color: aqua;
-  }
-
-  .headpic {
-    height: 20%;
-    width: 20%;
-  }
-
-  .wrapper {
-    display: flex;
-    margin: auto;
-  }
-
-  .contentbody {
-    justify-content: space-around;
-  }
-}
-
 /* || general setup */
 
 .html {
@@ -111,4 +89,26 @@
 .caption {
   background-color: #ffffff;
   padding: 5px;
+}
+
+/* || breakpoints */
+
+@media only screen and (max-width: 1000px) {
+  .html {
+    background-color: aqua;
+  }
+
+  .headpic {
+    height: 20%;
+    width: 20%;
+  }
+
+  .wrapper {
+    display: flex;
+    margin: auto;
+  }
+
+  .contentbody {
+    justify-content: space-around;
+  }
 }
