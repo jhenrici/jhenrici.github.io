@@ -107,7 +107,7 @@
   .contentbody {
     width: 600px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-content: center;
     padding-bottom: 15px;
   }
@@ -119,7 +119,12 @@
   }
 
   .caption {
+    width: 180px;
     background-color: #ffffff;
     padding: 5px;
+  }
+
+  .workhistory {
+    width: 600px;
   }
 }
