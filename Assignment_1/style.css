@@ -113,13 +113,11 @@
   }
 
   .bodypic {
-    width: 400px;
     border: 1px solid #ff0000;
     border-radius: 4px;
   }
 
   .caption {
-    width: 175px;
     background-color: #ffffff;
     padding: 5px;
   }
