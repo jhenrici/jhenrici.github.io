@@ -99,6 +99,7 @@
   }
 
   .wrapper {
+    width: 600px;
     display: flex;
     margin: auto;
     padding-top: 15px;
@@ -106,6 +107,7 @@
   }
 
   .contentbody {
+    width: 600px;
     align-self: center;
     flex-direction: row;
   }
