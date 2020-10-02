@@ -99,12 +99,26 @@
   }
 
   .wrapper {
+    width: 600px;
+    align-content: center;
     display: flex;
     margin: auto;
+    padding-top: 15px;
   }
 
   .contentbody {
-    align-self: flex-start;
+    width: 600px;
+  }
+
+  .bodypic {
+    width: 400px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+  }
+
+  .caption {
+    background-color: #ffffff;
+    padding: 5px;
   }
 
   .workhistory {
