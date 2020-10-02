@@ -127,5 +127,7 @@
 
   .workhistory {
     width: 600px;
+    display: flex;
+    justify-content: flex-end;
   }
 }
