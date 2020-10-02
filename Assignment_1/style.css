@@ -107,10 +107,8 @@
   }
 
   .contentbody {
-    display: inline-flex;
     width: 600px;
     align-self: center;
-    flex-direction: row;
   }
 
   .bodypic {
