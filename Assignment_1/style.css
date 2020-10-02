@@ -107,4 +107,8 @@
   .contentbody {
     justify-content: space-around;
   }
+
+  .workhistory {
+    justify-content: flex-end;
+  }
 }
