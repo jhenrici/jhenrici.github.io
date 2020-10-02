@@ -92,39 +92,3 @@
 
 /* || breakpoints */
 
-@media only screen and (max-width: 1000px) {
-  .headpic {
-    height: 15%;
-    width: 15%;
-  }
-
-  .wrapper {
-    width: 600px;
-    align-content: center;
-    display: flex;
-    margin: auto;
-    padding-top: 15px;
-    flex-direction: column;
-  }
-
-  .contentbody {
-    width: 600px;
-    align-self: center;
-    flex-direction: row;
-  }
-
-  .bodypic {
-    border: 1px solid #ff0000;
-    border-radius: 4px;
-  }
-
-  .caption {
-    background-color: #ffffff;
-    padding: 5px;
-  }
-
-  .workhistory {
-    width: 600px;
-    align-self: center;
-  }
-}
