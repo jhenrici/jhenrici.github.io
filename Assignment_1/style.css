@@ -94,6 +94,11 @@
 /* || breakpoints */
 
 @media only screen and (max-width: 1000px) {
+  .headpic {
+    height: 20%;
+    width: 20%;
+  }
+
   .wrapper {
     display: flex;
     margin: auto;
@@ -102,4 +107,6 @@
   .contentbody {
     justify-content: space-between;
   }
+
+
 }
