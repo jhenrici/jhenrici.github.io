@@ -109,6 +109,7 @@
   .contentbody {
     width: 600px;
     align-self: flex-start;
+    flex-direction: row;
   }
 
   .bodypic {
