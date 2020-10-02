@@ -104,7 +104,7 @@
     display: flex;
     margin: auto;
     padding-top: 15px;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
   }
 
   .contentbody {
