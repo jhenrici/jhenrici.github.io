@@ -1,6 +1,6 @@
 /* || breakpoints */
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .headpic {
     height: 20%;
     width: 20%;
