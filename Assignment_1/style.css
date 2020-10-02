@@ -106,7 +106,7 @@
   }
 
   .contentbody {
-    align-self: flex-start;
+    align-self: center;
     flex-direction: row;
   }
 
@@ -121,6 +121,6 @@
   }
 
   .workhistory {
-    align-self: flex-end;
+    align-self: center;
   }
 }
