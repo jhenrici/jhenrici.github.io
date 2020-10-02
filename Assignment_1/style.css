@@ -106,7 +106,7 @@
 
   .contentbody {
     width: 600px;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-content: center;
     padding-bottom: 15px;
