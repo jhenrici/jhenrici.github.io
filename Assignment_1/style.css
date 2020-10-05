@@ -100,14 +100,14 @@
 
   .wrapper {
     width: 600px;
+    display: flex;
     margin: auto;
     padding-top: 15px;
   }
 
   .contentbody {
     width: 600px;
-    display: flex;
-    align-content: center;
+    flex: 100%;
     padding-bottom: 15px;
   }
 
