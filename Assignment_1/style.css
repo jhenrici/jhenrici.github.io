@@ -100,9 +100,6 @@
 
   .wrapper {
     width: 600px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     margin: auto;
     padding-top: 15px;
   }
