@@ -110,14 +110,14 @@
   .contentbody {
     width: 600px;
     display: inline-flexbox;
-    align-items: baseline;
+    align-items: center;
     padding-bottom: 15px;
   }
 
   .bodypic {
     width: 375px;
     height: 200px;
-    flex: 60%;
+    align-self: center;
     border: 1px solid #ff0000;
     border-radius: 4px;
 
@@ -125,7 +125,7 @@
 
   .caption {
     width: 180px;
-    flex: 40%;
+    align-self: center;
     background-color: #ffffff;
     padding: 5px;
   }
