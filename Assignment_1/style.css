@@ -110,13 +110,13 @@
   .contentbody {
     width: 600px;
     display: inline-flexbox;
-    flex-direction: row;
     padding-bottom: 15px;
   }
 
   .bodypic {
     width: 375px;
     height: 200px;
+    flex: 60%;
     border: 1px solid #ff0000;
     border-radius: 4px;
 
@@ -124,6 +124,7 @@
 
   .caption {
     width: 180px;
+    flex: 40%;
     background-color: #ffffff;
     padding: 5px;
   }
