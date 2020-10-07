@@ -115,10 +115,11 @@
   }
 
   .bodypic {
-    width: 390px;
+    width: 375px;
     height: 200px;
     border: 1px solid #ff0000;
     border-radius: 4px;
+
   }
 
   .caption {
