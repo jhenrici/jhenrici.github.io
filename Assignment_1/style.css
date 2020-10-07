@@ -102,8 +102,6 @@
     width: 600px;
     margin: auto;
     padding-top: 15px;
-    display: flex;
-    justify-content: flex-end;
   }
 
   .contentbody {
@@ -134,6 +132,5 @@
 
   .workhistory {
     width: 600px;
-    flex-basis: 100%;
   }
 }
