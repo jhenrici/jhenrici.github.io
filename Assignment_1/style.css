@@ -109,7 +109,7 @@
 
   .contentbody {
     width: 600px;
-    display: inline-flexbox;
+    display: flex;
     align-items: center;
     padding-bottom: 15px;
   }
