@@ -115,6 +115,7 @@
 
   .bodypic {
     flex-basis: 60%;
+    width: 360px;
     align-self: center;
     border: 1px solid #ff0000;
     border-radius: 4px;
@@ -123,6 +124,7 @@
 
   .caption {
     flex-basis: 30%;
+    width: 180px;
     align-self: center;
     background-color: #ffffff;
     padding: 5px;
