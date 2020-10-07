@@ -110,6 +110,7 @@
   .contentbody {
     width: 600px;
     display: inline-flexbox;
+    align-items: baseline;
     padding-bottom: 15px;
   }
 
