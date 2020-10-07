@@ -133,6 +133,5 @@
   .workhistory {
     width: 600px;
     flex-basis: 100%;
-    position: relative;
   }
 }
