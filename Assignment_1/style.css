@@ -101,13 +101,15 @@
   .wrapper {
     width: 600px;
     display: flex;
+    flex-direction: column;
     margin: auto;
     padding-top: 15px;
   }
 
   .contentbody {
     width: 600px;
-    flex: 100%;
+    display: inline-flexbox;
+    flex-direction: row;
     padding-bottom: 15px;
   }
 
