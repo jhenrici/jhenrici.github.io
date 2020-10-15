@@ -1,6 +1,6 @@
 .header { 
     display: flex;
-    background-color: #e6f0e3;
+    background-color: #d9e0f7;
     flex-direction: column; 
     justify-content: space-between;
     align-items: center;
@@ -14,7 +14,7 @@
   .content { 
     margin: auto;
     display: flex;
-    background-color: #a3d693;
+    background-color: #98bfda;
     flex-direction: column;
     justify-content: center;
     align-items: center;
