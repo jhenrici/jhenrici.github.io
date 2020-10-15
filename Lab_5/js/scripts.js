@@ -8,7 +8,7 @@ content.append(olist);
 olist.className = "countries";
 
 const p = document.createElement("p");
-p.innerHTML = "<br><br>Format: Country Name - Country Code";
+p.innerHTML = "<br><br>Format: Country Name - <strong>Country Code</strong>";
 content.insertBefore(p, olist);
 
 const but = document.createElement("button");
