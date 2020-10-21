@@ -2,6 +2,8 @@
     margin: 0 auto;
     text-align: center;
     padding: 20px;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 form {
@@ -16,6 +18,10 @@ ul {
     margin: 0;
   }
   
+label {
+    font-weight: bold;
+}
+
 form li + li {
     margin-top: 1em;
   }
