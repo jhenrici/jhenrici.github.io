@@ -1,0 +1,16 @@
+{
+    "name": "henrici_lab8",
+    "version": "1.0.0",
+    "description": "Lab 8: FetchAPI and Hosting a Web App",
+    "main": "server.js",
+    "scripts":{
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
+    },
+    "author": "jhenrici",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1"
+    },
+    "devDependencies": {}
+}
