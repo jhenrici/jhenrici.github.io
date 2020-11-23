@@ -1,9 +1,7 @@
 let url = "https://www.reddit.com/r/popular.json";
 let chart = "";
 console.log(url);
-
 //const fetchPromise = fetch(url);
-
 let settings = { method: "Get" };
 let chartValues = [];
 
@@ -22,22 +20,24 @@ async function getData() {
             
             // Loop to pick 5 random entries
             for (x = 0; x < 5; x++) {
-                let r = randomInt(0,listSize);
+                let div = document.getElementById('chartContainer');
+                let r = [randomInt(0,listSize)];
+                console.log(r)
                 let p = json.data.children[r].data;
                 console.log(p)
-
-                let subreddit = finder.subreddit;
-                let author = finder.author;
-                let title = finder.title;
-                let ups = finder.ups;
+                let subreddit, author, title, ups;
+                subreddit = finder.subreddit;
+                author = finder.author;
+                title = finder.title;
+                ups = finder.ups;
 
                 let message = "<b>Subreddit</b>: " + subreddit + 
                 " <b>Author</b>: " + author + 
                 " <b>Title</b>: " + title + 
                 " <b>Up votes</b>: " + ups;
                 
-                let list = document.getElementById("redditList");
-                list.innerHTML += "<li>" + message + "</li>"
+                let rlist = document.getElementById("redditList");
+                rlist.innerHTML += "<li>" + message + "</li>";
                 
                 /*
                     Get a random number within the size of the list
@@ -71,10 +71,12 @@ window.onload = async function makeChart() {
             { 
                 type: "column",
                 name: "Popular Reddit",
-                dataPoints: chartValues// WHAT GOES HERE???
+                dataPoints: chartValues // WHAT GOES HERE???
             }
         ]
     });
     
     chart.render();
 }
+
+/*window.onload = makeChart(); */
