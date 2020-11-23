@@ -21,20 +21,19 @@ async function getData() {
             // Loop to pick 5 random entries
             for (x = 0; x < 5; x++) {
                 let div = document.getElementById('chartContainer');
-                let r = [randomInt(0,listSize)];
-                console.log(r)
+                let r = randomInt(0,listSize);
                 let p = json.data.children[r].data;
                 console.log(p)
-                let subreddit, author, title, ups;
-                subreddit = finder.subreddit;
-                author = finder.author;
-                title = finder.title;
-                ups = finder.ups;
+                
+                let subreddit = p.subreddit
+                let author = p.author;
+                let title = p.title;
+                let ups = p.ups;
 
                 let message = "<b>Subreddit</b>: " + subreddit + 
                 " <b>Author</b>: " + author + 
                 " <b>Title</b>: " + title + 
-                " <b>Up votes</b>: " + ups;
+                " <b>Upvotes</b>: " + ups;
                 
                 let rlist = document.getElementById("redditList");
                 rlist.innerHTML += "<li>" + message + "</li>";
