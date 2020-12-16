@@ -345,3 +345,76 @@ window.onload = async function loadPage() {
 
 
 }
+
+/*
+ ------ ADD NEW GROUP ------
+*/
+function submitNewGroup() {
+  console.log("Called sumbitNewGroup");
+  let groupName = document.getElementById("addGroupName").vlaue;
+  console.log("groupName:" + groupName);
+  data = { 'name': groupName};
+
+  let groupURL = "http://localhost:400/group";
+  const fetchPromise = fetch(groupURL, {
+    method: 'POST', headers: {
+      'Content-Type': 'application/json'
+    }, body: JSON.stringify(data)
+  });
+
+  let groupId;
+  fetchPromise.then((response) => { return response.json();}).then((group) => {
+    console.log("Here POST group");
+    console.log(group);
+    let message = "ERROR";
+    if (typeof group.id !== "undefined") {
+      groupName = group.data.name;
+      groupId = group.id;
+      message = "Message: " + group.message + " groupName: " + groupName + "<br>groupId: " + groupId + "<br> ";
+    }
+    else if(typeof group !== "undefined"){
+      message = "Message: " + group.message ;
+    }
+    document.getElementById("postNewGroupContent").innerHTML = message;
+  })
+  .catch((err) => {
+    console.log(err);
+    document.getElementById("postNewGroupContent").innerHTML = "Invalid group : " + data.groupName;
+  });
+
+}
+
+/*
+ ------ SEARCH ------
+*/
+let url = "/allTasks"
+const taskArray = [];
+
+fetch(url).then(blob => blob.json()).then(data => taskArray.push(...data.data))
+function findMatches(wordToMatch, taskArray){
+  return taskArray.filter(mission => {
+    const regex = new RegExp(wordToMatch, 'gi');
+    return mission.taskName.match(regex)
+  });
+}
+
+function displayMatches() {
+  if(document.getElementById('searchTask').value != ""){
+    const matchArray = findMatches(this.value, taskArray);
+    const html = matchArray.map(mission => { const regex = new RegExp(this.value, 'gi');
+       const missionName = mission.taksName.replace(regex, `<span class="highlight">${this.value}</span>`);
+       return `
+         <li>
+           <span class="mission">${missionName}</span>
+         </li>
+       `;
+     }).join('');
+     suggestions.innerHTML = html;
+     }
+     else{
+       suggestions.innerHTML = "";
+     }
+   }
+   const searchInput = document.getElementById('searchTask');
+   const suggestions = document.querySelector('.suggestions');
+   searchInput.addEventListener('keyup', displayMatches);
